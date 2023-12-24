@@ -35,5 +35,11 @@ namespace Walkthrough.Controllers
         {
             return "Version 2 Running.";
         }
+
+        [HttpGet("GetV3")]
+        public string GetV3()
+        {
+            return "Version 3 Running.";
+        }
     }
 }
