@@ -18,7 +18,7 @@ namespace Walkthrough.Controllers
             _logger = logger;
         }
 
-        [HttpGet(Name = "Get")]
+        [HttpGet("Get")]
         public IEnumerable<WeatherForecast> Get()
         {
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
@@ -30,7 +30,7 @@ namespace Walkthrough.Controllers
             .ToArray();
         }
 
-        [HttpGet(Name = "GetV2")]
+        [HttpGet("GetV2")]
         public string GetV2()
         {
             return "Version 2 Running.";
