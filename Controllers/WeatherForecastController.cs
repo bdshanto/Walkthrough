@@ -29,5 +29,11 @@ namespace Walkthrough.Controllers
             })
             .ToArray();
         }
+
+        [HttpGet(Name = "GetV2")]
+        public string GetV2()
+        {
+            return "Version 2 Running.";
+        }
     }
 }
