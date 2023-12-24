@@ -8,7 +8,7 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["Walkthrough/Walkthrough.csproj", "Walkthrough/"]
+COPY ["Walkthrough/Walkthrough.csproj", "Walkthrough"]
 RUN dotnet restore "./Walkthrough/./Walkthrough.csproj"
 COPY . .
 WORKDIR "/src/Walkthrough"
