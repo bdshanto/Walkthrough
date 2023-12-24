@@ -4,8 +4,9 @@ namespace Walkthrough
     {
         public static void Main(string[] args)
         {
-            var builder = WebApplication.CreateBuilder(args);
 
+            var builder = WebApplication.CreateBuilder(args);
+            Console.WriteLine("sTARTING");
             // Add services to the container.
 
             builder.Services.AddControllers();
@@ -24,8 +25,9 @@ namespace Walkthrough
 
 
             app.MapControllers();
-
+            Console.WriteLine("RUN");
             app.Run();
+            Console.WriteLine("RUN");
         }
     }
 }
