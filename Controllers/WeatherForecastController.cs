@@ -46,6 +46,12 @@ namespace Walkthrough.Controllers
         public string GetDev()
         {
             return "Version Dev Running.";
+        } 
+        
+        [HttpGet("GetV4")]
+        public string GetV4()
+        {
+            return "Version V4 Running.";
         }
     }
 }
